@@ -10,3 +10,5 @@ Please update the following in the code (Program.cs) to be able to successfully 
  5. resourceGroup
  6. dataFactoryName
  7. pipelineName
+
+*Note: Publish this Azure Functions Solution from Visual Studio. Ensure Tools for Azure Functions is pre-installed in your visual studio.*
