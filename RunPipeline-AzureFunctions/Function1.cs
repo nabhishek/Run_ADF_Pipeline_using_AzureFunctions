@@ -18,13 +18,13 @@ namespace RunPipelineAzureFunctions
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "get", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
             // Set variables
-            string tenantID = "xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx"; //"<your tenant ID>";
-            string applicationId = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx"; //"<your application ID>";
-            string authenticationKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";//"<your authentication key for the application>";
-            string subscriptionId = "xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx"; //"<your subscription ID where the data factory resides>";
-            string resourceGroup = "xxxx"; //"<your resource group where the data factory resides>";
-            string dataFactoryName = "xxxx"; //" < specify the name of data factory to create. It must be globally unique.>";
-            string pipelineName = "xxxx";    // name of the pipeline 
+            string tenantID = ""; // your tenant ID
+            string applicationId = ""; // your application ID
+            string authenticationKey = ""; // your authentication key for the application
+            string subscriptionId = ""; // your subscription ID where the data factory resides
+            string resourceGroup = ""; // your resource group where the data factory resides
+            string dataFactoryName = ""; // specify the name of data factory to create. It must be globally unique
+            string pipelineName = "";    // name of the pipeline
 
             // Authenticate and create a data factory management client
             var context = new AuthenticationContext("https://login.windows.net/" + tenantID);
